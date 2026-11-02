@@ -127,14 +127,6 @@
   .chart-row.cur div { background: var(--red); color: var(--cream); }
   .chart-row .rn { background: none !important; box-shadow: none; color: var(--red) !important; justify-content: flex-end; font-size: 12px; }
 
-  /* Screens */
-  .screens { background: var(--cream); }
-  .phones { margin-top: clamp(40px, 5vw, 64px); display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(20px, 3vw, 40px); }
-  .pattern-row { margin: 0 20px; padding: 12px 0; border-top: 1px solid rgba(246,239,159,.4); display: flex; gap: 14px; align-items: center; }
-  .pattern-row .ini { width: 64px; height: 64px; flex: none; border-radius: 10px; background: var(--wine); display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 600; }
-  .pattern-row .name { font-size: 26px; font-weight: 600; line-height: 1; }
-  .pattern-row .by { margin-top: 4px; font: 400 13px var(--body); color: var(--cream); }
-  .pattern-row .st { margin-left: auto; font: 700 11px var(--body); letter-spacing: .08em; color: var(--cream); }
 
   /* Mascot */
   .goat-disc { aspect-ratio: 1; max-width: 520px; width: 100%; justify-self: center; border-radius: 50%; background: var(--butter); color: var(--red);
@@ -149,9 +141,8 @@
   .maker h2 { font-size: clamp(44px, 5.5vw, 72px); line-height: .9; }
   .maker p { margin: 22px 0 0; max-width: 30em; font: 400 18px/1.55 var(--body); color: var(--cream); }
   .maker .sig { margin-top: 22px; font: 600 13px var(--body); letter-spacing: .08em; text-transform: uppercase; }
-  .maker-art { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .maker-art > div { aspect-ratio: 3/4; border-radius: 20px; }
-  .maker-art .goat-tile { background: var(--butter); color: var(--red); display: flex; align-items: center; justify-content: center; }
+  .maker-art { aspect-ratio: 4/5; border-radius: 20px; overflow: hidden; background: var(--butter); }
+  .maker-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 
   /* FAQ */
   .faq { max-width: 900px; margin: 0 auto; }
@@ -319,70 +310,6 @@
   </div>
 </section>
 
-<section class="screens">
-  <div class="wrap">
-    <h2 class="h2" style="margin:0 auto;max-width:12em;text-align:center">YOUR PROJECTS, YOUR PATTERNS, YOUR CHARTS</h2>
-    <div class="phones" aria-hidden="true">
-
-      <div class="phone"><div class="phone-clip">
-        <div class="screen" style="background:var(--butter);color:var(--red)">
-          <div class="island"></div>
-          <div style="padding:78px 20px 18px;font-size:54px;font-weight:600;line-height:.9">WELCOME BACK!</div>
-          <div style="padding:0 20px"><div class="knit" style="height:250px"></div></div>
-          <div style="margin:12px 20px 0;display:grid;grid-template-columns:1fr auto;font:500 12px/1 var(--body);letter-spacing:.06em;text-transform:uppercase">
-            <div style="padding:8px 0;border-bottom:1px solid var(--red)">marlow cardigan</div><div style="padding:8px 0;border-bottom:1px solid var(--red);text-align:right">59%</div>
-            <div style="padding:8px 0">LAST WORKED ON</div><div style="padding:8px 0;text-align:right">02.08</div>
-          </div>
-          <div style="padding:22px 20px 12px;font-size:30px;font-weight:600;line-height:1">ON THE NEEDLES<sup style="font:600 12px var(--body);margin-left:4px">5</sup></div>
-          <div style="display:flex;gap:12px;padding-left:20px;overflow:hidden">
-            <div style="width:140px;flex:none"><div class="knit sun" style="height:140px"></div><div style="margin-top:8px;font-size:20px;font-weight:600;line-height:.95">TIDAL SOCKS</div></div>
-            <div style="width:140px;flex:none"><div class="knit moss" style="height:140px"></div><div style="margin-top:8px;font-size:20px;font-weight:600;line-height:.95">BRAMBLE HAT</div></div>
-            <div style="width:140px;flex:none"><div class="knit alt" style="height:140px"></div><div style="margin-top:8px;font-size:20px;font-weight:600;line-height:.95">FISHERMAN GANSEY</div></div>
-          </div>
-          <div class="grow"></div>
-          <div class="tabbar">
-            <div class="tabs"><div class="on">PROJECTS</div><div>PATTERNS</div><div>PROFILE</div></div>
-            <div class="fab" style="background:var(--wine);color:var(--butter)">+</div>
-          </div>
-        </div>
-      </div></div>
-
-      <div class="phone"><div class="phone-clip">
-        <div class="screen" style="background:var(--red);color:var(--butter)">
-          <div class="island"></div>
-          <div style="padding:78px 20px 18px;font-size:54px;font-weight:600;line-height:.9">PATTERNS</div>
-          <div style="padding:0 20px 14px;display:flex;gap:6px"><span class="pill fill" style="height:32px;padding:0 14px;border-radius:16px">ALL</span><span class="pill" style="height:32px;padding:0 14px;border-radius:16px;font-size:12px">NEW</span><span class="pill" style="height:32px;padding:0 14px;border-radius:16px;font-size:12px">ON NEEDLES</span><span class="pill" style="height:32px;padding:0 14px;border-radius:16px;font-size:12px">DONE</span></div>
-          <div class="pattern-row"><div class="ini">NJ</div><div><div class="name">NOVEMBER JACKET</div><div class="by">Brioche, top-down</div></div><span class="st">KNITTING</span></div>
-          <div class="pattern-row"><div class="ini">MC</div><div><div class="name">MARLOW CARDIGAN</div><div class="by">Raglan, worsted</div></div><span class="st">KNITTING</span></div>
-          <div class="pattern-row"><div class="ini">TS</div><div><div class="name">TIDAL SOCKS</div><div class="by">Toe-up, fingering</div></div><span class="st">KNITTING</span></div>
-          <div class="pattern-row"><div class="ini">NS</div><div><div class="name">NOVA SWEATER</div><div class="by">Colourwork yoke</div></div><span class="st">NEW</span></div>
-          <div class="pattern-row"><div class="ini">JS</div><div><div class="name">JUNIPER SHAWL</div><div class="by">Lace, mohair silk</div></div><span class="st">DONE</span></div>
-          <div class="grow"></div>
-          <div class="tabbar">
-            <div class="tabs"><div>PROJECTS</div><div class="on">PATTERNS</div><div>PROFILE</div></div>
-            <div class="fab" style="background:var(--butter);color:var(--red)">+</div>
-          </div>
-        </div>
-      </div></div>
-
-      <div class="phone"><div class="phone-clip">
-        <div class="screen" style="background:var(--cream);color:var(--wine)">
-          <div class="island"></div>
-          <div style="padding:62px 20px 0;font:500 12px var(--body);letter-spacing:.08em;text-transform:uppercase"><span style="display:inline-flex;height:34px;padding:0 14px;border-radius:17px;background:var(--red);color:var(--butter);align-items:center">← back to step</span></div>
-          <div style="padding:26px 20px 4px;font-size:54px;font-weight:600;line-height:.9;color:var(--red)">CHART A</div>
-          <div style="padding:0 20px 18px;font:700 12px var(--body);letter-spacing:.08em;color:var(--red)">ROW 5 OF 12 · RS</div>
-          <div style="padding:0 14px" data-chart="12" data-current="5" data-numbered></div>
-          <div class="grow"></div>
-          <div style="margin:0 20px 34px;display:flex;gap:8px">
-            <div style="width:60px;height:60px;flex:none;border-radius:30px;background:var(--wine);color:var(--butter);display:flex;align-items:center;justify-content:center;font-size:22px">←</div>
-            <div style="flex:1;height:60px;border-radius:30px;background:var(--red);color:var(--butter);display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-size:24px;font-weight:600"><span>NEXT ROW</span><span>→</span></div>
-          </div>
-        </div>
-      </div></div>
-
-    </div>
-  </div>
-</section>
 
 <section class="dark">
   <div class="wrap split" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
@@ -402,9 +329,8 @@
       <p>I kept losing my place in a brioche yoke, with the PDF on one screen, a row counter app on another and a pencil tally on the printout. Mohair puts all three in one place. I hope it saves you a few rows of tinking back.</p>
       <div class="sig">Aiste · Maker of Mohair</div>
     </div>
-    <div class="maker-art" aria-hidden="true">
-      <div class="goat-tile"><svg width="70%" viewBox="0 0 200 210" style="font-size:8px;stroke-width:8;height:auto"><use href="#goat"/></svg></div>
-      <div class="knit"></div>
+    <div class="maker-art">
+      <img src="img/maker.jpg" width="1200" height="1600" loading="lazy" alt="Aiste on a sofa wearing a half-knitted green hat, needles still in it">
     </div>
   </div>
 </section>
